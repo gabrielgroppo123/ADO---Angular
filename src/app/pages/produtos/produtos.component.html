@@ -1,0 +1,44 @@
+<h1>Novo produto</h1>
+
+<section class="form">
+  <div>
+    <label>Nome: </label>
+    <input type="text" [(ngModel)]="novoProduto.nome">
+  </div>
+  <div>
+    <label>Preço: </label>
+    <input type="text" [(ngModel)]="novoProduto.preco">
+  </div>
+    <div>
+    <label>Estoque: </label>
+    <input type="text" [(ngModel)]="novoProduto.estoque">
+  </div>
+
+  <div>
+    <button (click)="cadastrar()">Cadastrar</button>
+  </div>
+
+</section>
+
+<h1>Lista de produtos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Preço</th>
+      <th>Estoque</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for(produtos of produtos; track produtos.id) {
+    <tr>
+      <th>{{produtos.id}}</th>
+      <th>{{produtos.nome}}</th>
+      <th>{{produtos.preco}}</th>
+      <th>{{produtos.estoque}}</th>
+  </tr>
+}
+  </tbody>
+</table>

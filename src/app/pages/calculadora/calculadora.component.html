@@ -1,0 +1,22 @@
+<h1>Calculadora</h1>
+
+<section class="form">
+  <div>
+    <label>Número 1: </label>
+    <input type="text" [(ngModel)]="numero01">
+  </div>
+    <div>
+    <label>Número 2: </label>
+    <input type="text" [(ngModel)]="numero02">
+  </div>
+
+  <div>
+    Resultado: {{resp}}
+  </div>
+  <div>
+    <button (click)="somar()">+</button>
+    <button (click)="subtrair()">-</button>
+    <button (click)="multiplicar()">*</button>
+    <button (click)="dividir()">/</button>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.contadores {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+app-cont {
+  display: block;
+  width: 220px;
+  padding: 20px;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  background-color: #fff;
+  text-align: center;
+
+  font-family: Arial, sans-serif;
+}
